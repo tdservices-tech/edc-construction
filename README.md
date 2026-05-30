@@ -17,7 +17,7 @@
 - **Site web :** [edc-construction](https://tdservices-tech.github.io/edc-construction)
 
 ## Zone de livraison
-Odienné et tout le Kabadougou.
+Odienné et partout en Côte d'Ivoire.
 
 ## Horaires
 - Lundi au Vendredi : 7h – 18h
