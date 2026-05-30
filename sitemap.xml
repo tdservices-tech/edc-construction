@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Accueil -->
+  <url>
+    <loc>https://tdservices-tech.github.io/edc-construction/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Vente de briques -->
+  <url>
+    <loc>https://tdservices-tech.github.io/edc-construction/briques.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Vente de sable -->
+  <url>
+    <loc>https://tdservices-tech.github.io/edc-construction/sable.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Vente de gravier -->
+  <url>
+    <loc>https://tdservices-tech.github.io/edc-construction/gravier.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Location d'engins BTP -->
+  <url>
+    <loc>https://tdservices-tech.github.io/edc-construction/location-engins.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Devis / Contact -->
+  <url>
+    <loc>https://tdservices.github.io/edc-construction/devis.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
