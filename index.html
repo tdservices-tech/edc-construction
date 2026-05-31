@@ -1,290 +1,240 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDC Construction – Matériaux de construction à Odienné</title>
-    <meta name="description" content="EDC Construction : vente et livraison de sable, gravier, briques à Odienné et partout en Côte d'Ivoire. Location d'engins, vente de terrains. Devis gratuit.">
-    <link rel="icon" type="image/png" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23e67e22'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-size='60' fill='white' font-weight='bold'%3EEDC%3C/text%3E%3C/svg%3E">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root { --orange: #e67e22; --dark: #1a1a1a; --grey: #2c2c2c; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Segoe UI', system-ui, sans-serif; color: #fff; background: var(--dark); line-height: 1.6; }
-        .container { max-width: 1100px; margin: auto; padding: 0 20px; }
-        h1, h2, h3, .btn, .btn-header, .btn-whatsapp { font-family: 'Oswald', sans-serif; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EDC Construction | Matériaux de construction à Odienné</title>
+<meta name="description" content="Sable, gravier, briques, transport, location d'engins et vente de terrains à Odienné. Devis gratuit.">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="EDC Construction">
+<meta property="og:description" content="Votre partenaire construction à Odienné.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#e67e22">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
 
-        /* ===== HEADER BANNIÈRE MODERNE ===== */
-        .site-header {
-            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
-            border-bottom: 3px solid var(--orange);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-        }
+<style>
+:root{
+--orange:#e67e22;
+--dark:#141414;
+--card:#232323;
+--text:#f5f5f5;
+--muted:#b8b8b8;
+--radius:12px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Segoe UI,sans-serif;background:var(--dark);color:var(--text);line-height:1.6}
+.container{max-width:1140px;margin:auto;padding:0 20px}
+h1,h2,h3,.btn{font-family:Oswald,sans-serif}
+header{
+position:sticky;top:0;z-index:1000;
+background:#111;border-bottom:3px solid var(--orange)
+}
+.navbar{
+display:flex;justify-content:space-between;align-items:center;
+padding:14px 20px;max-width:1140px;margin:auto
+}
+.brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:#fff}
+.logo{
+width:48px;height:48px;background:var(--orange);
+display:flex;align-items:center;justify-content:center;
+border-radius:10px;font-size:24px
+}
+.brand-name{font:700 1.5rem Oswald,sans-serif;color:var(--orange)}
+.brand-sub{font-size:.75rem;color:#aaa;letter-spacing:1px}
+.hero{
+padding:120px 20px;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('images/benne.jpg') center/cover;
+}
+.hero h1{font-size:3rem;color:var(--orange)}
+.hero p{max-width:700px;margin:20px auto 30px}
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:var(--orange);
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+transition:.3s
+}
+.btn:hover{transform:translateY(-2px)}
+section{padding:80px 0}
+.section-title{
+text-align:center;
+margin-bottom:40px;
+color:var(--orange);
+font-size:2rem
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:24px
+}
+.card{
+background:var(--card);
+border-radius:var(--radius);
+overflow:hidden;
+border:1px solid #333
+}
+.card img{
+width:100%;height:220px;object-fit:cover
+}
+.card h3{padding:18px 18px 8px}
+.card p{padding:0 18px 20px;color:var(--muted)}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:12px
+}
+.gallery img{
+width:100%;height:250px;object-fit:cover;
+border-radius:10px
+}
+.review-box,.contact-box{
+background:var(--card);
+padding:40px;
+border-radius:var(--radius);
+max-width:700px;
+margin:auto;
+text-align:center
+}
+.contact-box p{margin:15px 0}
+footer{
+padding:35px 20px;
+text-align:center;
+background:#0d0d0d;
+border-top:3px solid var(--orange)
+}
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+width:64px;height:64px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#25D366;
+color:#fff;
+text-decoration:none;
+font-size:30px
+}
+@media(max-width:768px){
+.hero h1{font-size:2rem}
+.brand-name{font-size:1.1rem}
+}
+</style>
 
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 12px 20px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-        }
-
-        .brand-icon {
-            background: var(--orange);
-            width: 45px;
-            height: 45px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-            font-size: 26px;
-            transition: transform 0.3s;
-        }
-
-        .brand:hover .brand-icon {
-            transform: scale(1.05);
-        }
-
-        .brand-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .brand-name {
-            font-family: 'Oswald', sans-serif;
-            font-size: 26px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: var(--orange);
-            text-transform: uppercase;
-            line-height: 1.2;
-        }
-
-        .brand-sub {
-            font-family: 'Oswald', sans-serif;
-            font-size: 11px;
-            font-weight: 400;
-            color: #aaa;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .btn-header {
-            background: var(--orange);
-            color: #fff;
-            padding: 10px 22px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-            text-transform: uppercase;
-            border-radius: 4px;
-            transition: 0.3s;
-            border: 2px solid var(--orange);
-        }
-
-        .btn-header:hover {
-            background: transparent;
-            color: var(--orange);
-        }
-        /* ===== FIN HEADER ===== */
-
-        .hero { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('images/benne.jpg') center/cover; text-align: center; padding: 120px 20px; border-bottom: 3px solid var(--orange); }
-        .hero h1 { font-size: 2.8rem; text-transform: uppercase; color: var(--orange); }
-        .hero p { font-size: 1.2rem; margin: 15px auto 30px; max-width: 600px; }
-        .btn { display: inline-block; background: var(--orange); color: #fff; padding: 16px 40px; text-decoration: none; font-weight: 600; text-transform: uppercase; border: 2px solid var(--orange); transition: 0.3s; }
-        .btn:hover { background: transparent; color: var(--orange); }
-
-        section { padding: 80px 0; }
-        .section-title { text-align: center; font-size: 2rem; text-transform: uppercase; color: var(--orange); margin-bottom: 50px; }
-        .section-title::after { content: ''; display: block; width: 80px; height: 3px; background: var(--orange); margin: 15px auto 0; }
-
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .service-card { background: var(--grey); border: 1px solid #3a3a3a; text-align: center; padding-bottom: 25px; transition: transform 0.3s; }
-        .service-card:hover { transform: translateY(-5px); border-color: var(--orange); }
-        .service-card img { width: 100%; height: 200px; object-fit: cover; }
-        .service-card h3 { margin: 20px 0 10px; text-transform: uppercase; }
-        .service-card p { color: #aaa; padding: 0 15px; }
-
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; }
-        .gallery img { width: 100%; height: 250px; object-fit: cover; border: 2px solid transparent; transition: 0.3s; }
-        .gallery img:hover { border-color: var(--orange); }
-
-        .contact-box { background: var(--grey); padding: 50px; text-align: center; max-width: 600px; margin: auto; border: 1px solid #3a3a3a; }
-        .contact-box h3 { text-transform: uppercase; color: var(--orange); margin-bottom: 20px; }
-        .btn-whatsapp { display: inline-block; background: #25D366; color: #fff; padding: 16px 40px; text-decoration: none; font-weight: 600; text-transform: uppercase; border-radius: 4px; transition: 0.3s; }
-        .btn-whatsapp:hover { background: #128C7E; }
-
-        .map-section { text-align: center; padding: 60px 0; }
-        .map-iframe { width: 100%; height: 300px; border: 1px solid #3a3a3a; max-width: 600px; border-radius: 8px; }
-
-        footer { background: #111; text-align: center; padding: 30px 20px; border-top: 3px solid var(--orange); }
-        footer p { opacity: 0.7; font-size: 14px; }
-        footer a { color: var(--orange); text-decoration: none; }
-
-        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: #fff; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 28px; text-decoration: none; z-index: 999; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: 0.3s; }
-        .whatsapp-float:hover { transform: scale(1.1); background: #128C7E; }
-
-        @media (max-width: 768px) { 
-            .hero h1 { font-size: 1.8rem; } 
-            .hero { padding: 80px 20px; }
-            .brand-name { font-size: 18px; }
-            .brand-sub { font-size: 8px; }
-            .brand-icon { width: 35px; height: 35px; font-size: 20px; }
-            .btn-header { padding: 8px 16px; font-size: 12px; }
-        }
-
-        .review-box { background: var(--grey); padding: 50px; text-align: center; max-width: 700px; margin: auto; border: 1px solid #3a3a3a; border-radius: 8px; }
-        .review-box p { color: #ddd; margin-bottom: 15px; }
-        form.contact-form { text-align: left; max-width: 400px; margin: auto; }
-        form.contact-form label { color: #ccc; display: block; margin-bottom: 5px; }
-        form.contact-form input, form.contact-form textarea { width: 100%; padding: 12px; background: #1a1a1a; border: 1px solid #444; color: #fff; margin-bottom: 15px; border-radius: 4px; }
-        form.contact-form button { background: var(--orange); color: #fff; padding: 12px; border: none; text-transform: uppercase; font-weight: bold; cursor: pointer; width: 100%; border-radius: 4px; transition: 0.3s; }
-        form.contact-form button:hover { background: #d35400; }
-    </style>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "EDC Construction",
-      "image": "https://tdservices-tech.github.io/edc-construction/images/logo.png",
-      "@id": "https://tdservices-tech.github.io/edc-construction",
-      "url": "https://tdservices-tech.github.io/edc-construction",
-      "telephone": "+2250505075373",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "En face de la Chambre des Métiers",
-        "addressLocality": "Odienné",
-        "addressCountry": "CI"
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-          "opens": "07:00",
-          "closes": "18:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "07:00",
-          "closes": "14:00"
-        }
-      ],
-      "priceRange": "Appeler pour devis"
-    }
-    </script>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"LocalBusiness",
+"name":"EDC Construction",
+"telephone":"+2250505075373",
+"address":{
+"@type":"PostalAddress",
+"streetAddress":"En face de la Chambre des Métiers",
+"addressLocality":"Odienné",
+"addressCountry":"CI"
+}
+}
+</script>
 </head>
 <body>
 
-<!-- ===== NOUVEAU HEADER BANNIÈRE ===== -->
-<header class="site-header">
-    <div class="navbar">
-        <a href="#" class="brand">
-            <div class="brand-icon">🏗️</div>
-            <div class="brand-text">
-                <div class="brand-name">EDC CONSTRUCTION</div>
-                <div class="brand-sub">BÂTISSEURS DE CONFIANCE</div>
-            </div>
-        </a>
-        <a href="tel:+2250505075373" class="btn-header">📞 Appeler</a>
-    </div>
+<header>
+<div class="navbar">
+<a class="brand" href="#">
+<div class="logo">🏗️</div>
+<div>
+<div class="brand-name">EDC CONSTRUCTION</div>
+<div class="brand-sub">Bâtisseurs de confiance</div>
+</div>
+</a>
+<a class="btn" href="tel:+2250505075373">📞 Appeler</a>
+</div>
 </header>
-<!-- ===== FIN HEADER ===== -->
 
 <section class="hero">
-    <div class="container">
-        <h1>EDC Construction</h1>
-        <p>Sable • Gravier • Briques • Transport • Location d'engins • Terrains</p>
-        <a href="https://wa.me/2250505075373" class="btn" target="_blank">WhatsApp — Devis gratuit</a>
-    </div>
+<div class="container">
+<h1>Matériaux de Construction à Odienné</h1>
+<p>Sable • Gravier • Briques • Transport • Location d'engins • Vente de terrains</p>
+<a class="btn" href="https://wa.me/2250505075373" target="_blank" rel="noopener noreferrer">WhatsApp • Devis Gratuit</a>
+</div>
 </section>
 
 <section>
-    <div class="container">
-        <h2 class="section-title">Nos Services</h2>
-        <div class="services-grid">
-            <div class="service-card"><img src="sable.jpg" alt="Sable de rivière livré à Odienné"><h3>Sable</h3><p>Sable de rivière et à maçonner, livré sur chantier.</p></div>
-            <div class="service-card"><img src="gravier.jpg" alt="Gravier concassé pour béton"><h3>Gravier</h3><p>Graviers concassés de différents calibres.</p></div>
-            <div class="service-card"><img src="briques.jpg" alt="Briques industrielles qualité"><h3>Briques</h3><p>Briques pour murs, clôtures et dallages.</p></div>
-            <div class="service-card"><img src="benne.jpg" alt="Camion benne de livraison"><h3>Transport</h3><p>Livraison rapide dans tout le Kabadougou.</p></div>
-            <div class="service-card"><img src="engin.jpg" alt="Compacteur de chantier"><h3>Location Engins</h3><p>Compacteurs et matériel de chantier.</p></div>
-            <div class="service-card"><img src="chantierlivre.jpg" alt="Chantier livré en matériaux."><h3>Immobilier</h3><p>Construction, lotissement, vente de terrains.</p></div>
-        </div>
-    </div>
+<div class="container">
+<h2 class="section-title">Nos Services</h2>
+<div class="grid">
+<div class="card"><img loading="lazy" src="images/sable.jpg" alt="Sable"><h3>Sable</h3><p>Livraison rapide sur chantier.</p></div>
+<div class="card"><img loading="lazy" src="images/gravier.jpg" alt="Gravier"><h3>Gravier</h3><p>Plusieurs calibres disponibles.</p></div>
+<div class="card"><img loading="lazy" src="images/briques.jpg" alt="Briques"><h3>Briques</h3><p>Qualité professionnelle.</p></div>
+<div class="card"><img loading="lazy" src="images/benne.jpg" alt="Transport"><h3>Transport</h3><p>Livraison dans le Kabadougou.</p></div>
+<div class="card"><img loading="lazy" src="images/engin.jpg" alt="Engins"><h3>Location d'engins</h3><p>Matériel de chantier disponible.</p></div>
+<div class="card"><img loading="lazy" src="images/chantierlivre.jpg" alt="Immobilier"><h3>Immobilier</h3><p>Terrains et projets de construction.</p></div>
+</div>
+</div>
 </section>
 
-<section style="background: var(--grey);">
-    <div class="container">
-        <h2 class="section-title">Chantiers Livrés</h2>
-        <div class="gallery">
-            <img src="sable.jpg" alt="Livraison de sable à Odienné">
-            <img src="briqueslivres.jpg" alt="Stock briques industrielles EDC">
-            <img src="gravier3.jpg" alt="Gravier en gros et detail">
-            <img src="locationengin.jpg" alt="Locations poclins, compacteur, bull etc">
-        </div>
-    </div>
+<section style="background:#1b1b1b">
+<div class="container">
+<h2 class="section-title">Réalisations</h2>
+<div class="gallery">
+<img loading="lazy" src="images/sable.jpg" alt="Livraison sable">
+<img loading="lazy" src="images/briqueslivres.jpg" alt="Briques">
+<img loading="lazy" src="images/gravier3.jpg" alt="Gravier">
+<img loading="lazy" src="images/locationengin.jpg" alt="Engins">
+</div>
+</div>
 </section>
 
 <section>
-    <div class="container">
-        <h2 class="section-title">Votre avis compte</h2>
-        <div class="review-box">
-            <p style="font-size: 1.3rem;">Votre retour nous aide à progresser.</p>
-            <p>Prenez une minute pour partager votre expérience avec <strong>EDC Construction</strong>.</p>
-            <a href="https://search.google.com/local/writereview?placeid=g/6gsev2Vco940qk4rO" target="_blank" class="btn" style="margin-bottom: 30px;">⭐ Donner mon avis sur Google</a>
-            <p style="color: #666; margin: 30px 0;">— ou —</p>
-            <p style="margin-bottom: 20px;">Envoyez-nous directement votre témoignage :</p>
-            <form action="mailto:edcconstructions8@gmail.com?subject=Témoignage%20client%20EDC" method="post" enctype="text/plain" class="contact-form">
-                <label>Votre nom</label>
-                <input type="text" name="nom" required>
-                <label>Votre message</label>
-                <textarea name="message" rows="4" required></textarea>
-                <button type="submit">Envoyer mon témoignage</button>
-                <p style="font-size: 0.8rem; color: #777; margin-top: 10px; text-align: center;">En soumettant, vous acceptez la publication éventuelle de votre témoignage.</p>
-            </form>
-        </div>
-    </div>
+<div class="container">
+<h2 class="section-title">Votre avis compte</h2>
+<div class="review-box">
+<p>Votre retour nous aide à progresser.</p>
+<br>
+<a class="btn" href="https://g.page/r/CeMqaR7lSKhxEBM/review" target="_blank" rel="noopener noreferrer">
+⭐ Donner mon avis sur Google
+</a>
+</div>
+</div>
 </section>
 
-<section style="background: var(--grey);">
-    <div class="container">
-        <div class="contact-box">
-            <h3>Demandez Votre Devis</h3>
-            <p>WhatsApp direct ou appel téléphonique. Réponse rapide garantie.</p>
-            <a href="https://wa.me/2250505075373" class="btn-whatsapp" target="_blank">💬 WhatsApp</a>
-            <p style="margin-top:20px;">📞 +225 05 05 07 53 73</p>
-        </div>
-    </div>
+<section>
+<div class="container">
+<div class="contact-box">
+<h2>Demandez votre devis</h2>
+<p>Réponse rapide par WhatsApp ou téléphone.</p>
+<a class="btn" href="https://wa.me/2250505075373" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+<p>📞 +225 05 05 07 53 73</p>
+</div>
+</div>
 </section>
 
-<section class="map-section">
-    <div class="container">
-        <h2 class="section-title">Où Nous Trouver</h2>
-        <p>📍 En face de la Chambre des Métiers, Odienné, Côte d'Ivoire</p>
-        <p style="margin-bottom:20px;">🕒 Lun-Ven : 7h-18h | Sam : 7h-14h</p>
-        <iframe class="map-iframe" src="https://www.google.com/maps?q=Odienn%C3%A9+C%C3%B4te+d'Ivoire&output=embed" allowfullscreen loading="lazy"></iframe>
-    </div>
+<section>
+<div class="container" style="text-align:center">
+<h2 class="section-title">Où nous trouver</h2>
+<p>📍 En face de la Chambre des Métiers, Odienné</p>
+<iframe style="width:100%;max-width:700px;height:320px;border:0;border-radius:12px"
+src="https://www.google.com/maps?q=Odienné,Côte%20d'Ivoire&output=embed"
+loading="lazy"></iframe>
+</div>
 </section>
 
 <footer>
-    <p>📍 Odienné, Côte d'Ivoire | 📞 +225 05 05 07 53 73</p>
-    <p style="margin-top:15px;"><a href="#">Facebook</a> | <a href="#">Instagram</a></p>
-    <p style="margin-top:15px; opacity:0.5;">© 2025 EDC Construction</p>
+<p>📍 Odienné, Côte d'Ivoire</p>
+<p>📞 +225 05 05 07 53 73</p>
+<p>© 2026 EDC Construction</p>
 </footer>
 
-<a href="https://wa.me/2250505075373" class="whatsapp-float" target="_blank">💬</a>
+<a class="whatsapp" href="https://wa.me/2250505075373" target="_blank" rel="noopener noreferrer">💬</a>
 
 </body>
 </html>
