@@ -3,238 +3,683 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EDC Construction | Matériaux de construction à Odienné</title>
-<meta name="description" content="Sable, gravier, briques, transport, location d'engins et vente de terrains à Odienné. Devis gratuit.">
-<meta name="robots" content="index,follow">
-<meta property="og:title" content="EDC Construction">
-<meta property="og:description" content="Votre partenaire construction à Odienné.">
+<title>EDC Construction | Sable, Gravier, Briques & Location d'Engins à Odienné</title>
+<meta name="description" content="EDC Construction : vente de sable, gravier concassé, briques industrielles et terrains à Odienné, Kabadougou. Location de pelle et compacteur. Livraison partout en Côte d'Ivoire. Devis gratuit par WhatsApp.">
+<meta name="keywords" content="sable Odienné, gravier Odienné, briques industrielles, location engins chantier Côte d'Ivoire, vente terrain Odienné, matériaux construction Kabadougou, EDC Construction, gravier concassé, parpaing Odienné, location pelle mécanique, location compacteur">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#E8742C">
+<link rel="canonical" href="https://edc-construction.vercel.app/">
+
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#e67e22">
+<meta property="og:title" content="EDC Construction | Sable, Gravier, Briques & Location d'Engins à Odienné">
+<meta property="og:description" content="Vente de sable, gravier concassé, briques industrielles et terrains à Odienné. Location d'engins de chantier. Livraison partout en Côte d'Ivoire.">
+<meta property="og:url" content="https://edc-construction.vercel.app/">
+<meta property="og:locale" content="fr_CI">
+<meta property="og:site_name" content="EDC Construction">
+<meta property="og:image" content="https://edc-construction.vercel.app/chantier.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="geo.region" content="CI-93">
+<meta name="geo.placename" content="Odienné, Kabadougou, Côte d'Ivoire">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+
+<!-- Preload du logo et de l'image hero mobile : ce sont les premiers pixels vus -->
+<link rel="preload" as="image" href="logo.webp" type="image/webp">
+<link rel="preload" as="image" href="chantier-sm.webp" type="image/webp" media="(max-width: 768px)">
+<link rel="preload" as="image" href="chantier.webp" type="image/webp" media="(min-width: 769px)">
+
+<!-- Police via Google Fonts avec fallback système immédiat : le texte s'affiche tout de suite -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root{
---orange:#e67e22;
---dark:#141414;
---card:#232323;
---text:#f5f5f5;
---muted:#b8b8b8;
---radius:12px;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:Segoe UI,sans-serif;background:var(--dark);color:var(--text);line-height:1.6}
-.container{max-width:1140px;margin:auto;padding:0 20px}
-h1,h2,h3,.btn{font-family:Oswald,sans-serif}
-header{
-position:sticky;top:0;z-index:1000;
-background:#111;border-bottom:3px solid var(--orange)
-}
-.navbar{
-display:flex;justify-content:space-between;align-items:center;
-padding:14px 20px;max-width:1140px;margin:auto
-}
-.brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:#fff}
-.logo{
-width:48px;height:48px;background:var(--orange);
-display:flex;align-items:center;justify-content:center;
-border-radius:10px;font-size:24px
-}
-.brand-name{font:700 1.5rem Oswald,sans-serif;color:var(--orange)}
-.brand-sub{font-size:.75rem;color:#aaa;letter-spacing:1px}
-.hero{
-padding:120px 20px;
-text-align:center;
-background:
-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
-url('images/benne.jpg') center/cover;
-}
-.hero h1{font-size:3rem;color:var(--orange)}
-.hero p{max-width:700px;margin:20px auto 30px}
-.btn{
-display:inline-block;
-padding:14px 30px;
-background:var(--orange);
-color:#fff;
-text-decoration:none;
-border-radius:8px;
-transition:.3s
-}
-.btn:hover{transform:translateY(-2px)}
-section{padding:80px 0}
-.section-title{
-text-align:center;
-margin-bottom:40px;
-color:var(--orange);
-font-size:2rem
-}
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:24px
-}
-.card{
-background:var(--card);
-border-radius:var(--radius);
-overflow:hidden;
-border:1px solid #333
-}
-.card img{
-width:100%;height:220px;object-fit:cover
-}
-.card h3{padding:18px 18px 8px}
-.card p{padding:0 18px 20px;color:var(--muted)}
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:12px
-}
-.gallery img{
-width:100%;height:250px;object-fit:cover;
-border-radius:10px
-}
-.review-box,.contact-box{
-background:var(--card);
-padding:40px;
-border-radius:var(--radius);
-max-width:700px;
-margin:auto;
-text-align:center
-}
-.contact-box p{margin:15px 0}
-footer{
-padding:35px 20px;
-text-align:center;
-background:#0d0d0d;
-border-top:3px solid var(--orange)
-}
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-width:64px;height:64px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-background:#25D366;
-color:#fff;
-text-decoration:none;
-font-size:30px
-}
-@media(max-width:768px){
-.hero h1{font-size:2rem}
-.brand-name{font-size:1.1rem}
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
-"@context":"https://schema.org",
-"@type":"LocalBusiness",
-"name":"EDC Construction",
-"telephone":"+2250505075373",
-"address":{
-"@type":"PostalAddress",
-"streetAddress":"En face de la Chambre des Métiers",
-"addressLocality":"Odienné",
-"addressCountry":"CI"
-}
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "EDC Construction",
+  "alternateName": "Entreprise Djagassa Construction",
+  "image": "https://edc-construction.vercel.app/chantier.jpg",
+  "telephone": "+2250505075373",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Quartier Stade, en face de la Chambre des Métiers",
+    "addressLocality": "Odienné",
+    "addressRegion": "Kabadougou",
+    "addressCountry": "CI"
+  },
+  "areaServed": "Côte d'Ivoire",
+  "makesOffer": [
+    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Sable de construction"}},
+    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Gravier concassé"}},
+    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Briques industrielles"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Location d'engins de chantier"}},
+    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Vente de terrains"}}
+  ]
 }
 </script>
+
+<style>
+:root{
+  --black:#1C1C1C;
+  --orange:#E8742C;
+  --orange-dark:#C25A1A;
+  --yellow:#C9A24B;
+  --concrete:#3A3A38;
+  --sand:#EAE6DD;
+  --white:#FFFFFF;
+  --terracotta:#8B3A1E;
+  --max-w:1180px;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'Oswald', var(--font-body);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--font-body);
+  color:var(--black);
+  background:var(--sand);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4,.display{
+  font-family:var(--font-display);
+  text-transform:uppercase;
+  letter-spacing:0.02em;
+  line-height:1.1;
+}
+img{max-width:100%;display:block;height:auto;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:var(--max-w);margin:0 auto;padding:0 24px;}
+main{display:block;}
+
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--orange);color:var(--white);
+  font-family:var(--font-display);font-weight:600;
+  text-transform:uppercase;letter-spacing:0.04em;font-size:14px;
+  padding:14px 26px;border:2px solid var(--black);
+  box-shadow:4px 4px 0 var(--black);
+  transition:transform .15s ease, box-shadow .15s ease;
+  cursor:pointer;
+}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--black);}
+.btn-outline{background:transparent;color:var(--black);}
+.btn-dark{background:var(--black);color:var(--white);border-color:var(--black);}
+
+.hazard{
+  height:14px;
+  background:repeating-linear-gradient(-45deg, var(--yellow) 0 18px, var(--black) 18px 36px);
+}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--font-display);font-size:13px;font-weight:600;
+  letter-spacing:0.12em;text-transform:uppercase;color:var(--orange);
+  margin-bottom:14px;
+}
+.eyebrow::before{content:'';width:22px;height:3px;background:var(--orange);display:inline-block;}
+
+section{padding:80px 0;}
+@media (max-width:768px){section{padding:48px 0;}}
+
+/* Accessibilité : focus visible partout */
+a:focus-visible, button:focus-visible{outline:3px solid var(--orange);outline-offset:2px;}
+@media (prefers-reduced-motion: reduce){*{transition:none !important;} html{scroll-behavior:auto;}}
+
+/* ===== HEADER ===== */
+.header{position:sticky;top:0;z-index:100;background:var(--black);border-bottom:4px solid var(--orange);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:74px;}
+.logo-block{display:flex;align-items:center;gap:12px;}
+.logo-img{width:46px;height:46px;border-radius:50%;flex-shrink:0;}
+.logo-text{display:flex;flex-direction:column;color:var(--white);}
+.logo-text strong{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--orange);letter-spacing:0.03em;line-height:1;}
+.logo-text small{font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;color:var(--sand);}
+
+.main-nav{display:flex;align-items:center;gap:26px;}
+.main-nav a{color:var(--sand);font-size:14px;font-weight:500;font-family:var(--font-display);text-transform:uppercase;letter-spacing:0.04em;padding:6px 0;}
+.main-nav a:not(.nav-cta):hover{color:var(--orange);}
+.main-nav .nav-cta{padding:10px 18px;box-shadow:3px 3px 0 var(--orange);border-color:var(--orange);}
+.main-nav .nav-cta:hover{box-shadow:1px 1px 0 var(--orange);}
+
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
+.burger span{width:24px;height:3px;background:var(--sand);display:block;border-radius:1px;}
+
+@media (max-width:900px){
+  .main-nav{
+    position:fixed;top:74px;left:0;right:0;background:var(--black);
+    flex-direction:column;align-items:flex-start;padding:18px 24px 26px;gap:16px;
+    border-bottom:4px solid var(--orange);transform:translateY(-110%);transition:transform .25s ease;
+    max-height:calc(100vh - 74px);overflow-y:auto;
+  }
+  .main-nav.open{transform:translateY(0);}
+  .main-nav .nav-cta{margin-top:4px;}
+  .burger{display:flex;}
+}
+
+/* ===== HERO ===== */
+.hero{position:relative;min-height:86vh;display:flex;align-items:center;overflow:hidden;}
+.hero-media{position:absolute;inset:0;z-index:0;width:100%;height:100%;}
+.hero-media img{width:100%;height:100%;object-fit:cover;filter:saturate(0.92) brightness(0.6);}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(100deg, rgba(28,28,28,0.94) 0%, rgba(28,28,28,0.82) 38%, rgba(28,28,28,0.35) 75%, rgba(28,28,28,0.55) 100%);
+}
+.hero-content{position:relative;z-index:1;padding:80px 24px;max-width:720px;}
+.hero-title{color:var(--white);font-size:clamp(36px,6vw,60px);margin-bottom:20px;}
+.hero-sub{color:var(--sand);font-size:16px;max-width:540px;margin-bottom:30px;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:32px;}
+.hero-outline{color:var(--white);border-color:var(--white);box-shadow:4px 4px 0 var(--white);}
+.hero-outline:hover{box-shadow:2px 2px 0 var(--white);}
+.hero-tags{display:flex;flex-wrap:wrap;gap:10px;list-style:none;}
+.hero-tags li{
+  font-family:var(--font-display);font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;
+  color:var(--black);background:var(--yellow);padding:7px 13px;border:1px solid var(--black);
+}
+@media (max-width:600px){
+  .hero{min-height:auto;}
+  .hero-content{padding:56px 20px 48px;}
+}
+
+/* ===== TRUST STRIP ===== */
+.trust-strip{background:var(--concrete);border-bottom:1px solid rgba(255,255,255,0.08);}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:26px 24px;}
+.trust-item{display:flex;flex-direction:column;gap:4px;}
+.trust-item strong{color:var(--white);font-family:var(--font-display);font-size:14.5px;letter-spacing:0.02em;}
+.trust-item span{color:#B9B6AE;font-size:12.5px;}
+@media (max-width:700px){.trust-grid{grid-template-columns:1fr;gap:14px;padding:22px;}}
+
+/* ===== SECTION HEADINGS ===== */
+.section-title{font-size:clamp(26px,4vw,38px);margin-bottom:14px;color:var(--black);}
+.section-lead{max-width:600px;color:var(--concrete);font-size:15.5px;margin-bottom:42px;}
+
+/* ===== PRODUCTS ===== */
+.stock-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:48px;}
+.stock-card{background:var(--white);border:2px solid var(--black);box-shadow:6px 6px 0 var(--black);display:flex;flex-direction:column;}
+.stock-img{aspect-ratio:4/3;overflow:hidden;border-bottom:2px solid var(--black);background:var(--concrete);}
+.stock-img img{width:100%;height:100%;object-fit:cover;}
+.stock-body{padding:20px 20px 24px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.stock-tag{font-family:var(--font-display);font-size:11px;font-weight:600;letter-spacing:0.12em;color:var(--orange);text-transform:uppercase;}
+.stock-body h3{font-size:20px;margin-bottom:2px;}
+.stock-body p{color:var(--concrete);font-size:14px;flex:1;}
+.stock-link{
+  font-family:var(--font-display);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--black);
+  margin-top:8px;border-bottom:2px solid var(--orange);align-self:flex-start;padding-bottom:2px;
+}
+.stock-link:hover{color:var(--orange);}
+@media (max-width:880px){.stock-grid{grid-template-columns:1fr 1fr;}}
+@media (max-width:580px){.stock-grid{grid-template-columns:1fr;}}
+
+.calibre-block{display:grid;grid-template-columns:1.1fr 1fr;border:2px solid var(--black);background:var(--white);box-shadow:6px 6px 0 var(--black);}
+.calibre-img{overflow:hidden;background:var(--concrete);}
+.calibre-img img{width:100%;height:100%;object-fit:cover;min-height:260px;}
+.calibre-text{padding:34px;display:flex;flex-direction:column;justify-content:center;}
+.calibre-text h3{font-size:20px;margin-bottom:12px;}
+.calibre-text p{color:var(--concrete);font-size:14.5px;margin-bottom:18px;}
+.calibre-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.calibre-list li{font-size:14px;border-left:3px solid var(--yellow);padding-left:12px;}
+.calibre-list strong{font-family:var(--font-display);color:var(--orange-dark);}
+@media (max-width:760px){.calibre-block{grid-template-columns:1fr;} .calibre-img img{min-height:200px;}}
+
+/* ===== ENGINS ===== */
+.engins-section{background:var(--black);}
+.engins-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:44px;}
+.engin-card{position:relative;border:2px solid var(--orange);overflow:hidden;aspect-ratio:4/3.4;background:var(--concrete);}
+.engin-card picture, .engin-card img{width:100%;height:100%;object-fit:cover;display:block;}
+.engin-label{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(to top, rgba(0,0,0,0.92), rgba(0,0,0,0));padding:32px 16px 14px;}
+.engin-label h4{color:var(--white);font-family:var(--font-display);font-size:15.5px;text-transform:none;letter-spacing:0.01em;margin-bottom:3px;}
+.engin-label p{color:var(--yellow);font-size:12px;}
+.engins-cta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;border-top:1px solid rgba(255,255,255,0.15);padding-top:30px;}
+.engins-cta p{color:var(--sand);font-size:15px;max-width:460px;}
+@media (max-width:820px){.engins-grid{grid-template-columns:1fr 1fr;}}
+@media (max-width:540px){.engins-grid{grid-template-columns:1fr;}}
+
+/* ===== TERRAINS ===== */
+.terrains-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:44px;align-items:start;}
+.terrains-points{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:26px;}
+.terrains-points li{padding-left:22px;position:relative;font-size:14.5px;color:var(--concrete);}
+.terrains-points li::before{content:'■';color:var(--orange);position:absolute;left:0;font-size:11px;top:3px;}
+.terrains-card{background:var(--white);border:2px solid var(--black);box-shadow:6px 6px 0 var(--terracotta);padding:30px;}
+.terrains-card h3{font-family:var(--font-display);font-size:15px;text-transform:uppercase;margin-bottom:15px;}
+.terrains-card ol{padding-left:20px;display:flex;flex-direction:column;gap:7px;margin-bottom:16px;}
+.terrains-card li{font-size:14px;color:var(--concrete);}
+.terrains-note{font-size:12.5px;color:#777;border-top:1px solid #ddd;padding-top:13px;}
+@media (max-width:820px){.terrains-grid{grid-template-columns:1fr;gap:30px;}}
+
+/* ===== GALLERY ===== */
+.gallery-grid{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto auto;gap:16px;}
+.gallery-item{position:relative;overflow:hidden;border:2px solid var(--black);background:var(--concrete);}
+.gallery-item picture, .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;}
+.gallery-item figcaption{
+  position:absolute;left:0;right:0;bottom:0;background:rgba(28,28,28,0.88);color:var(--sand);
+  font-size:12px;padding:9px 13px;font-family:var(--font-display);letter-spacing:0.02em;
+}
+.gallery-tall{grid-row:span 2;}
+.gallery-wide{grid-column:span 2;aspect-ratio:21/9;}
+.gallery-grid .gallery-item:not(.gallery-tall):not(.gallery-wide){aspect-ratio:4/3;}
+@media (max-width:820px){
+  .gallery-grid{grid-template-columns:1fr 1fr;}
+  .gallery-tall{grid-row:auto;aspect-ratio:4/3;}
+}
+@media (max-width:540px){.gallery-grid{grid-template-columns:1fr;} .gallery-wide{grid-column:span 1;}}
+
+/* ===== LIVRAISON ===== */
+.livraison-section{background:var(--concrete);padding:80px 0;}
+.livraison-section .section-lead, .livraison-section .eyebrow{color:var(--sand);}
+.livraison-section .eyebrow{color:var(--yellow);}
+.livraison-section .section-title{color:var(--white);}
+.livraison-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:44px;align-items:center;}
+.livraison-media{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--orange);border:3px solid var(--orange);}
+.livraison-media picture, .livraison-media img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:3/4;}
+.steps{display:flex;flex-direction:column;gap:20px;}
+.step{display:flex;gap:15px;align-items:flex-start;}
+.step-num{flex:0 0 auto;width:32px;height:32px;border-radius:50%;background:var(--orange);color:var(--white);font-family:var(--font-display);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;}
+.step h4{color:var(--white);font-size:14.5px;text-transform:none;letter-spacing:0;font-family:var(--font-display);margin-bottom:3px;}
+.step p{color:#C9C6BC;font-size:13.5px;}
+@media (max-width:820px){.livraison-grid{grid-template-columns:1fr;gap:28px;}}
+
+/* ===== CONTACT ===== */
+.contact-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:44px;align-items:center;}
+.contact-info{display:flex;flex-direction:column;gap:16px;}
+.contact-row{display:flex;flex-direction:column;gap:4px;}
+.contact-row strong{font-family:var(--font-display);font-size:13.5px;letter-spacing:0.03em;}
+.contact-row span{font-size:14.5px;color:var(--concrete);}
+.contact-row a{border-bottom:1px solid var(--orange);}
+.contact-row a:hover{color:var(--orange-dark);}
+.contact-cta-group{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px;}
+.contact-media{border:2px solid var(--black);box-shadow:6px 6px 0 var(--black);overflow:hidden;}
+.contact-media picture, .contact-media img{width:100%;height:100%;object-fit:cover;display:block;}
+@media (max-width:820px){.contact-grid{grid-template-columns:1fr;gap:30px;} .contact-media{order:-1;max-height:300px;}}
+
+/* ===== FOOTER ===== */
+.site-footer{background:var(--black);color:var(--sand);padding-top:44px;}
+.footer-inner{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:22px;padding-bottom:32px;}
+.footer-logo{font-family:var(--font-display);font-size:21px;font-weight:700;color:var(--orange);}
+.footer-logo small{color:var(--sand);font-size:11.5px;letter-spacing:0.1em;margin-left:6px;text-transform:uppercase;}
+.footer-brand p{font-size:12.5px;color:#B9B6AE;margin-top:8px;max-width:280px;}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap;}
+.footer-links a{font-family:var(--font-display);font-size:12.5px;text-transform:uppercase;letter-spacing:0.04em;color:var(--sand);}
+.footer-links a:hover{color:var(--orange);}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:16px 24px;font-size:12px;color:#9C998F;}
+@media (max-width:600px){.footer-inner{flex-direction:column;} .footer-bottom{flex-direction:column;text-align:center;}}
+
+/* ===== WHATSAPP FLOAT ===== */
+.whatsapp-float{
+  position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;
+  background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:28px;box-shadow:0 4px 14px rgba(0,0,0,0.35);z-index:90;
+  border:2px solid rgba(255,255,255,0.25);
+}
+.whatsapp-float:hover{transform:scale(1.06);}
+@supports (bottom: env(safe-area-inset-bottom)){
+  .whatsapp-float{bottom:calc(18px + env(safe-area-inset-bottom));}
+}
+</style>
 </head>
 <body>
 
-<header>
-<div class="navbar">
-<a class="brand" href="#">
-<div class="logo">🏗️</div>
-<div>
-<div class="brand-name">EDC CONSTRUCTION</div>
-<div class="brand-sub">Bâtisseurs de confiance</div>
-</div>
-</a>
-<a class="btn" href="tel:+2250505075373">📞 Appeler</a>
-</div>
+<header class="header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo-block" aria-label="EDC Construction, accueil">
+      <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.jpg" alt="Logo EDC Construction" width="48" height="48" class="logo-img">
+      </picture>
+      <span class="logo-text">
+        <strong>EDC</strong>
+        <small>Construction</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+      <a href="#produits">Matériaux</a>
+      <a href="#engins">Location d'engins</a>
+      <a href="#terrains">Terrains</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#contact" class="btn btn-dark nav-cta">Demander un devis</a>
+    </nav>
+
+    <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
-<section class="hero">
-<div class="container">
-<h1>Matériaux de Construction à Odienné</h1>
-<p>Sable • Gravier • Briques • Transport • Location d'engins • Vente de terrains</p>
-<a class="btn" href="https://wa.me/2250505075373" target="_blank" rel="noopener noreferrer">WhatsApp • Devis Gratuit</a>
-</div>
+<div class="hazard" role="presentation"></div>
+
+<main>
+
+<section id="top" class="hero">
+  <picture class="hero-media">
+    <source media="(max-width:768px)" srcset="chantier-sm.webp" type="image/webp">
+    <source media="(max-width:768px)" srcset="chantier-sm.jpg">
+    <source srcset="chantier.webp" type="image/webp">
+    <img src="chantier.jpg" alt="Chantier de construction avec tas de gravier et sable, EDC Construction Odienné" width="1280" height="720" fetchpriority="high">
+  </picture>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="wrap hero-content">
+    <p class="eyebrow" style="color:var(--yellow)">Odienné · Kabadougou · Côte d'Ivoire</p>
+    <h1 class="hero-title">Le matériau est<br>là. Le camion<br>aussi.</h1>
+    <p class="hero-sub">EDC Construction vend et livre sable, gravier concassé et briques industrielles. Location d'engins de chantier et vente de terrains à Odienné. Devis gratuit, livraison partout en Côte d'Ivoire.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/2250505075373" class="btn">📞 Devis WhatsApp — 05 05 07 53 73</a>
+      <a href="#produits" class="btn btn-outline hero-outline">Voir les matériaux</a>
+    </div>
+    <ul class="hero-tags">
+      <li>Sable</li>
+      <li>Gravier concassé</li>
+      <li>Briques industrielles</li>
+      <li>Location d'engins</li>
+      <li>Vente de terrains</li>
+    </ul>
+  </div>
 </section>
 
-<section>
-<div class="container">
-<h2 class="section-title">Nos Services</h2>
-<div class="grid">
-<div class="card"><img loading="lazy" src="sable.jpg" alt="Sable"><h3>Sable</h3><p>Livraison rapide sur chantier.</p></div>
-<div class="card"><img loading="lazy" src="gravier.jpg" alt="Gravier"><h3>Gravier</h3><p>Plusieurs calibres disponibles.</p></div>
-<div class="card"><img loading="lazy" src="briques.jpg" alt="Briques"><h3>Briques</h3><p>Qualité professionnelle.</p></div>
-<div class="card"><img loading="lazy" src="benne.jpg" alt="Transport"><h3>Transport</h3><p>Livraison dans le Kabadougou.</p></div>
-<div class="card"><img loading="lazy" src="engin.jpg" alt="Engins"><h3>Location d'engins</h3><p>Matériel de chantier disponible.</p></div>
-<div class="card"><img loading="lazy" src="chantierlivre.jpg" alt="Immobilier"><h3>Immobilier</h3><p>Terrains et projets de construction.</p></div>
+<div class="trust-strip">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><strong>📍 Odienné, Kabadougou</strong><span>Quartier Stade, face Chambre des Métiers</span></div>
+    <div class="trust-item"><strong>🚛 Livraison</strong><span>Partout en Côte d'Ivoire</span></div>
+    <div class="trust-item"><strong>💬 Réponse rapide</strong><span>Devis sous 24h par WhatsApp</span></div>
+  </div>
 </div>
-</div>
+
+<section id="produits">
+  <div class="wrap">
+    <p class="eyebrow">Nos matériaux de construction</p>
+    <h2 class="section-title">Sable, gravier et briques à Odienné</h2>
+    <p class="section-lead">Trois matériaux essentiels, vendus au volume dont vous avez besoin, chargés et livrés directement sur votre chantier.</p>
+
+    <div class="stock-grid">
+
+      <article class="stock-card">
+        <div class="stock-img">
+          <picture>
+            <source media="(max-width:600px)" srcset="sable-sm.webp" type="image/webp">
+            <source srcset="sable.webp" type="image/webp">
+            <img src="sable.jpg" alt="Tas de sable de construction EDC à Odienné" width="800" height="546" loading="lazy">
+          </picture>
+        </div>
+        <div class="stock-body">
+          <span class="stock-tag">Stock 01</span>
+          <h3>Sable</h3>
+          <p>Sable de construction pour béton, mortier, enduits et remblais. Disponible par camion, quantité ajustée à votre chantier.</p>
+          <a href="https://wa.me/2250505075373" class="stock-link">Demander un devis →</a>
+        </div>
+      </article>
+
+      <article class="stock-card">
+        <div class="stock-img">
+          <picture>
+            <source media="(max-width:600px)" srcset="gravier3-sm.webp" type="image/webp">
+            <source srcset="gravier3.webp" type="image/webp">
+            <img src="gravier3.jpg" alt="Gravier concassé EDC Construction Odienné" width="800" height="450" loading="lazy">
+          </picture>
+        </div>
+        <div class="stock-body">
+          <span class="stock-tag">Stock 02</span>
+          <h3>Gravier concassé</h3>
+          <p>Granulats concassés en plusieurs calibres (0-5, 5-15, 5-25, 15-25) pour fondations, dallages et voiries.</p>
+          <a href="https://wa.me/2250505075373" class="stock-link">Demander un devis →</a>
+        </div>
+      </article>
+
+      <article class="stock-card">
+        <div class="stock-img">
+          <picture>
+            <source media="(max-width:600px)" srcset="briques-sm.webp" type="image/webp">
+            <source srcset="briques.webp" type="image/webp">
+            <img src="briques.jpg" alt="Briques industrielles en parpaing EDC" width="800" height="450" loading="lazy">
+          </picture>
+        </div>
+        <div class="stock-body">
+          <span class="stock-tag">Stock 03</span>
+          <h3>Briques industrielles</h3>
+          <p>Parpaings alvéolés fabriqués en série, calibrés pour une maçonnerie droite et régulière. Disponibles en gros volumes.</p>
+          <a href="https://wa.me/2250505075373" class="stock-link">Demander un devis →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="calibre-block">
+      <div class="calibre-img">
+        <picture>
+          <source media="(max-width:600px)" srcset="gravier-sm.webp" type="image/webp">
+          <source srcset="gravier.webp" type="image/webp">
+          <img src="gravier.jpg" alt="Calibres de gravier disponibles, du 0-5 au 15-25" width="1280" height="720" loading="lazy">
+        </picture>
+      </div>
+      <div class="calibre-text">
+        <h3>Plusieurs calibres, un seul interlocuteur</h3>
+        <p>Selon votre besoin — fondation, dallage, drainage, voirie — le calibre de gravier change. Dites-nous l'usage, on vous indique le bon calibre et la quantité à commander.</p>
+        <ul class="calibre-list">
+          <li><strong>0-5</strong> — sablon, finitions</li>
+          <li><strong>5-15</strong> — béton courant</li>
+          <li><strong>15-25</strong> — fondations, gros volumes</li>
+          <li><strong>5-25</strong> — usage mixte</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section style="background:#1b1b1b">
-<div class="container">
-<h2 class="section-title">Réalisations</h2>
-<div class="gallery">
-<img loading="lazy" src="sable.jpg" alt="Livraison sable">
-<img loading="lazy" src="briqueslivres.jpg" alt="Briques">
-<img loading="lazy" src="gravier3.jpg" alt="Gravier">
-<img loading="lazy" src="locationengin.jpg" alt="Engins">
-</div>
-</div>
+<div class="hazard" role="presentation"></div>
+
+<section id="engins" class="engins-section">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--yellow)">Parc matériel</p>
+    <h2 class="section-title" style="color:var(--white)">Location de pelle et compacteur à Odienné</h2>
+    <p class="section-lead" style="color:#C9C6BC">Excavation, terrassement, compactage : nos engins de chantier sont disponibles à la location, prêts à être mobilisés sur votre chantier à Odienné ou ailleurs en Côte d'Ivoire.</p>
+
+    <div class="engins-grid">
+      <div class="engin-card">
+        <picture>
+          <source media="(max-width:600px)" srcset="engin-sm.webp" type="image/webp">
+          <source srcset="engin.webp" type="image/webp">
+          <img src="engin.jpg" alt="Pelle hydraulique CAT 330D transportée sur semi-remorque" width="800" height="673" loading="lazy">
+        </picture>
+        <div class="engin-label"><h4>Pelle hydraulique CAT 330D</h4><p>Excavation, terrassement, fouilles de fondation</p></div>
+      </div>
+      <div class="engin-card">
+        <picture>
+          <source media="(max-width:600px)" srcset="locationengin-sm.webp" type="image/webp">
+          <source srcset="locationengin.webp" type="image/webp">
+          <img src="locationengin.jpg" alt="Compacteur SANY et chargeuse sur parc EDC" width="800" height="673" loading="lazy">
+        </picture>
+        <div class="engin-label"><h4>Compacteur SANY</h4><p>Compactage de plateforme, voirie, remblais</p></div>
+      </div>
+      <div class="engin-card">
+        <picture>
+          <source media="(max-width:600px)" srcset="poclin-sm.webp" type="image/webp">
+          <source srcset="poclin.webp" type="image/webp">
+          <img src="poclin.jpg" alt="Pelle CAT en transport vers chantier" width="1280" height="1076" loading="lazy">
+        </picture>
+        <div class="engin-label"><h4>Pelle CAT — transport inclus</h4><p>Mobilisation sur site, mise en œuvre rapide</p></div>
+      </div>
+    </div>
+
+    <div class="engins-cta">
+      <p>Besoin d'un engin pour une durée précise ? On organise la location et le transport jusqu'au chantier.</p>
+      <a href="https://wa.me/2250505075373" class="btn">Réserver un engin</a>
+    </div>
+  </div>
 </section>
 
-<section>
-<div class="container">
-<h2 class="section-title">Votre avis compte</h2>
-<div class="review-box">
-<p>Votre retour nous aide à progresser.</p>
-<br>
-<a class="btn" href="https://share.google/FmOqvywAWo6OsKd3Y/review" target="_blank" rel="noopener noreferrer">
-⭐ Donner mon avis sur Google
-</a>
-</div>
-</div>
+<section id="terrains" class="terrains-section">
+  <div class="wrap terrains-grid">
+    <div class="terrains-text">
+      <p class="eyebrow">Foncier</p>
+      <h2 class="section-title">Vente de terrains à Odienné</h2>
+      <p class="section-lead" style="margin-bottom:22px;">EDC Construction propose des terrains à vendre à Odienné et dans la région du Kabadougou, pour vos projets résidentiels ou commerciaux. Superficie, titre et localisation précisés au cas par cas.</p>
+      <ul class="terrains-points">
+        <li>Terrains à usage d'habitation ou commercial</li>
+        <li>Situés à Odienné et environs</li>
+        <li>Accompagnement pour les démarches sur demande</li>
+      </ul>
+      <a href="https://wa.me/2250505075373" class="btn">Demander les disponibilités</a>
+    </div>
+    <div class="terrains-card">
+      <h3>Avant d'acheter, vérifiez :</h3>
+      <ol>
+        <li>Le titre de propriété et son authenticité</li>
+        <li>La superficie réelle, bornée sur place</li>
+        <li>L'accès à la voie et aux réseaux (eau, électricité)</li>
+        <li>L'absence de litige sur la parcelle</li>
+      </ol>
+      <p class="terrains-note">EDC Construction vous transmet les informations disponibles sur chaque parcelle ; faites toujours vérifier les documents fonciers avant tout engagement.</p>
+    </div>
+  </div>
 </section>
 
-<section>
-<div class="container">
-<div class="contact-box">
-<h2>Demandez votre devis</h2>
-<p>Réponse rapide par WhatsApp ou téléphone.</p>
-<a class="btn" href="https://wa.me/2250505075373" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
-<p>📞 +225 05 05 07 53 73</p>
-</div>
-</div>
+<div class="hazard" role="presentation"></div>
+
+<section id="realisations">
+  <div class="wrap">
+    <p class="eyebrow">Sur le terrain</p>
+    <h2 class="section-title">Des chantiers, pas des rendus 3D</h2>
+    <p class="section-lead">Quelques chantiers approvisionnés ou accompagnés par EDC Construction — du gros œuvre à la finition.</p>
+
+    <div class="gallery-grid">
+      <figure class="gallery-item gallery-tall">
+        <picture>
+          <source media="(max-width:600px)" srcset="chantierlivre-sm.webp" type="image/webp">
+          <source srcset="chantierlivre.webp" type="image/webp">
+          <img src="chantierlivre.jpg" alt="Gros œuvre en cours, étages en construction" width="800" height="600" loading="lazy">
+        </picture>
+        <figcaption>Gros œuvre — montée des étages</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <picture>
+          <source media="(max-width:600px)" srcset="chantier-sm.webp" type="image/webp">
+          <source srcset="chantier.webp" type="image/webp">
+          <img src="chantier.jpg" alt="Maison en construction avec tas de gravier et sable livrés" width="1280" height="720" loading="lazy">
+        </picture>
+        <figcaption>Matériaux livrés sur site</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <picture>
+          <source media="(max-width:600px)" srcset="chantieredc-sm.webp" type="image/webp">
+          <source srcset="chantieredc.webp" type="image/webp">
+          <img src="chantieredc.jpg" alt="Finitions et enduit sur villa, ouvriers EDC" width="1280" height="1076" loading="lazy">
+        </picture>
+        <figcaption>Finitions — enduit et clôture</figcaption>
+      </figure>
+      <figure class="gallery-item gallery-wide">
+        <picture>
+          <source media="(max-width:600px)" srcset="briques-industrielles-sm.webp" type="image/webp">
+          <source srcset="briques-industrielles.webp" type="image/webp">
+          <img src="briques-industrielles.jpg" alt="Stock de briques industrielles sur chantier" width="720" height="941" loading="lazy">
+        </picture>
+        <figcaption>Briques stockées sur chantier, prêtes à poser</figcaption>
+      </figure>
+    </div>
+  </div>
 </section>
 
-<section>
-<div class="container" style="text-align:center">
-<h2 class="section-title">Où nous trouver</h2>
-<p>📍 En face de la Chambre des Métiers, Odienné</p>
-<iframe style="width:100%;max-width:700px;height:320px;border:0;border-radius:12px"
-src="https://www.google.com/maps?q=Odienné,Côte%20d'Ivoire&output=embed"
-loading="lazy"></iframe>
-</div>
+<section class="livraison-section">
+  <div class="wrap livraison-grid">
+    <div class="livraison-media">
+      <picture>
+        <source media="(max-width:600px)" srcset="benne-sm.webp" type="image/webp">
+        <source srcset="benne.webp" type="image/webp">
+        <img src="benne.jpg" alt="Camion benne EDC chargé de briques pour livraison" width="800" height="450" loading="lazy">
+      </picture>
+      <picture>
+        <source media="(max-width:600px)" srcset="briqueslivres-sm.webp" type="image/webp">
+        <source srcset="briqueslivres.webp" type="image/webp">
+        <img src="briqueslivres.jpg" alt="Briques empilées sur camion prêtes à être livrées" width="800" height="1059" loading="lazy">
+      </picture>
+    </div>
+    <div class="livraison-text">
+      <p class="eyebrow">Logistique</p>
+      <h2 class="section-title">Livraison de matériaux en Côte d'Ivoire</h2>
+      <p class="section-lead" style="margin-bottom:26px;">Basée à Odienné, dans le Kabadougou, EDC Construction organise le transport de vos matériaux jusqu'à votre chantier, où qu'il se trouve en Côte d'Ivoire.</p>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><div><h4>Vous passez commande</h4><p>Par téléphone ou WhatsApp : matériau, quantité, lieu de livraison.</p></div></div>
+        <div class="step"><span class="step-num">2</span><div><h4>On confirme le devis</h4><p>Quantité, délai et coût de transport validés avant chargement.</p></div></div>
+        <div class="step"><span class="step-num">3</span><div><h4>Chargement et départ</h4><p>Camion benne chargé depuis notre stock d'Odienné.</p></div></div>
+        <div class="step"><span class="step-num">4</span><div><h4>Livraison sur site</h4><p>Déchargement directement sur votre chantier, partout en Côte d'Ivoire.</p></div></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer>
-<p>📍 Odienné, Côte d'Ivoire</p>
-<p>📞 +225 05 05 07 53 73</p>
-<p>© 2026 EDC Construction</p>
+<div class="hazard" role="presentation"></div>
+
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-text">
+      <p class="eyebrow">Nous trouver</p>
+      <h2 class="section-title">Devis gratuit à Odienné</h2>
+      <p class="section-lead" style="margin-bottom:30px;">Dites-nous le matériau, la quantité et le lieu de livraison — on vous répond avec un prix et un délai.</p>
+
+      <div class="contact-info">
+        <div class="contact-row"><strong>📍 Adresse</strong><span>Quartier Stade, en face de la Chambre des Métiers — Odienné, Kabadougou, Côte d'Ivoire</span></div>
+        <div class="contact-row"><strong>📞 Téléphone / WhatsApp</strong><span><a href="tel:+2250505075373">05 05 07 53 73</a> &nbsp;·&nbsp; <a href="tel:+2250777648256">07 77 64 82 56</a></span></div>
+        <div class="contact-row"><strong>🕒 Disponibilité</strong><span>Lun – Sam, et livraison sur demande dans toute la Côte d'Ivoire</span></div>
+      </div>
+
+      <div class="contact-cta-group">
+        <a href="https://wa.me/2250505075373" class="btn">Écrire sur WhatsApp</a>
+        <a href="https://share.google/FmOqvywAWo6OsKd3Y/review" target="_blank" rel="noopener noreferrer" class="btn btn-outline">⭐ Donner mon avis Google</a>
+      </div>
+    </div>
+
+    <div class="contact-media">
+      <picture>
+        <source media="(max-width:600px)" srcset="bureau-sm.webp" type="image/webp">
+        <source srcset="bureau.webp" type="image/webp">
+        <img src="bureau.jpg" alt="Bureau EDC Construction à Odienné, façade peinte" width="720" height="1157" loading="lazy">
+      </picture>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">EDC <small>Construction</small></span>
+      <p>Entreprise Djagassa Construction — Sable, gravier, briques industrielles, location d'engins et vente de terrains à Odienné, Kabadougou, Côte d'Ivoire.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#produits">Matériaux</a>
+      <a href="#engins">Engins</a>
+      <a href="#terrains">Terrains</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#contact">Contact</a>
+      <a href="https://share.google/FmOqvywAWo6OsKd3Y/review" target="_blank" rel="noopener noreferrer">⭐ Avis Google</a>
+    </div>
+  </div>
+  <div class="hazard" role="presentation"></div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 EDC Construction. Tous droits réservés.</span>
+    <span>Sable · Gravier · Briques · Location d'engins · Terrains</span>
+  </div>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/2250505075373" target="_blank" rel="noopener noreferrer">💬</a>
+<a class="whatsapp-float" href="https://wa.me/2250505075373" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp">💬</a>
+
+<script>
+const burger = document.getElementById('burgerBtn');
+const nav = document.getElementById('mainNav');
+burger.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('open');
+  burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+});
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  nav.classList.remove('open');
+  burger.setAttribute('aria-expanded', 'false');
+}));
+</script>
 
 </body>
 </html>
