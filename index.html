@@ -233,6 +233,30 @@ a:focus-visible, button:focus-visible{outline:3px solid var(--orange);outline-of
 .logo-text strong{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--orange);letter-spacing:0.03em;line-height:1;}
 .logo-text small{font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;color:var(--sand);}
 
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* ← aligner à gauche */
+  line-height: 1.1;
+}
+
+.logo-text strong {
+  font-family: var(--font-display);
+  font-size: 22px;          /* ← taille fixe, pas en vw */
+  font-weight: 700;
+  color: var(--orange);
+  letter-spacing: 0.03em;
+  line-height: 1;
+}
+
+.logo-text small {
+  font-size: 10.5px;        /* ← taille fixe en px */
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--sand);
+  line-height: 1;
+}
 .main-nav{display:flex;align-items:center;gap:26px;}
 .main-nav a{color:var(--sand);font-size:14px;font-weight:500;font-family:var(--font-display);text-transform:uppercase;letter-spacing:0.04em;padding:6px 0;}
 .main-nav a:not(.nav-cta):hover{color:var(--orange);}
