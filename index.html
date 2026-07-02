@@ -1150,82 +1150,6 @@
     }
 
     /* ============================================================ */
-    /* GALERIE                                                      */
-    /* ============================================================ */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto auto;
-      gap: 16px;
-    }
-
-    .gallery-item {
-      position: relative;
-      overflow: hidden;
-      border-radius: 12px;
-      border: none;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-      background: var(--concrete);
-    }
-
-    .gallery-item picture,
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .gallery-item figcaption {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(30, 30, 30, 0.75);
-      backdrop-filter: blur(4px);
-      color: var(--sand);
-      font-size: 11px;
-      padding: 10px 16px;
-      font-family: var(--font-display);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
-    .gallery-tall {
-      grid-row: span 2;
-    }
-
-    .gallery-wide {
-      grid-column: span 2;
-      aspect-ratio: 21/9;
-    }
-
-    .gallery-grid .gallery-item:not(.gallery-tall):not(.gallery-wide) {
-      aspect-ratio: 4/3;
-    }
-
-    @media (max-width: 820px) {
-      .gallery-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .gallery-tall {
-        grid-row: auto;
-        aspect-ratio: 4/3;
-      }
-    }
-
-    @media (max-width: 540px) {
-      .gallery-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-wide {
-        grid-column: span 1;
-      }
-    }
-
-    /* ============================================================ */
     /* LIVRAISON                                                    */
     /* ============================================================ */
     .livraison-section {
@@ -1548,7 +1472,6 @@
         <a href="#produits">Matériaux</a>
         <a href="#engins">Engins</a>
         <a href="#terrains">Terrains</a>
-        <a href="#realisations">Réalisations</a>
         <a href="#contact" class="btn-nav">Devis</a>
       </nav>
 
@@ -1681,7 +1604,7 @@
             <h3>Plusieurs calibres, un seul interlocuteur</h3>
             <p>Selon votre besoin — fondation, dallage, drainage, voirie — le calibre de gravier change. Dites-nous l'usage, on vous indique le bon calibre et la quantité à commander.</p>
             <ul class="calibre-list">
-              <li><strong>0-5</strong> — sablon, finitions</li>
+              <li><strong>0-5</strong> — sablon</li>
               <li><strong>5-15</strong> — béton courant</li>
               <li><strong>15-25</strong> — fondations, gros volumes</li>
               <li><strong>5-25</strong> — usage mixte</li>
@@ -1769,57 +1692,6 @@
     </section>
 
     <!-- ============================================================ -->
-    <!-- BANDE HAZARD                                                  -->
-    <!-- ============================================================ -->
-    <div class="hazard" role="presentation"></div>
-
-    <!-- ============================================================ -->
-    <!-- RÉALISATIONS                                                  -->
-    <!-- ============================================================ -->
-    <section id="realisations">
-      <div class="wrap">
-        <p class="eyebrow">Sur le terrain</p>
-        <h2 class="section-title">Des chantiers, pas des rendus 3D</h2>
-        <p class="section-lead">Quelques chantiers approvisionnés ou accompagnés par EDC Construction — du gros œuvre à la finition.</p>
-
-        <div class="gallery-grid">
-          <figure class="gallery-item gallery-tall">
-            <picture>
-              <source media="(max-width:600px)" srcset="chantierlivre-sm.webp" type="image/webp">
-              <source srcset="chantierlivre.webp" type="image/webp">
-              <img src="chantierlivre.jpg" alt="Gros œuvre en cours, montée des étages" width="800" height="600" loading="lazy">
-            </picture>
-            <figcaption>Gros œuvre — montée des étages</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <picture>
-              <source media="(max-width:600px)" srcset="chantier-sm.webp" type="image/webp">
-              <source srcset="chantier.webp" type="image/webp">
-              <img src="chantier.jpg" alt="Maison en construction avec tas de gravier et sable livrés" width="1280" height="720" loading="lazy">
-            </picture>
-            <figcaption>Matériaux livrés sur site</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <picture>
-              <source media="(max-width:600px)" srcset="chantieredc-sm.webp" type="image/webp">
-              <source srcset="chantieredc.webp" type="image/webp">
-              <img src="chantieredc.jpg" alt="Élévation des murs en briques industrielles sur chantier EDC" width="1280" height="1076" loading="lazy">
-            </picture>
-            <figcaption>Élévation des murs en briques</figcaption>
-          </figure>
-          <figure class="gallery-item gallery-wide">
-            <picture>
-              <source media="(max-width:600px)" srcset="briques-industrielles-sm.webp" type="image/webp">
-              <source srcset="briques-industrielles.webp" type="image/webp">
-              <img src="briques-industrielles.jpg" alt="Stock de briques industrielles sur chantier" width="720" height="941" loading="lazy">
-            </picture>
-            <figcaption>Briques stockées sur chantier, prêtes à poser</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================ -->
     <!-- LIVRAISON                                                     -->
     <!-- ============================================================ -->
     <section class="livraison-section">
@@ -1902,7 +1774,6 @@
         <a href="#produits">Matériaux</a>
         <a href="#engins">Engins</a>
         <a href="#terrains">Terrains</a>
-        <a href="#realisations">Réalisations</a>
         <a href="#contact">Contact</a>
         <a href="https://share.google/FmOqvywAWo6OsKd3Y/review" target="_blank" rel="noopener noreferrer">⭐ Avis Google</a>
       </div>
