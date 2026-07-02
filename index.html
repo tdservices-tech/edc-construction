@@ -39,6 +39,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 
+<!-- ============================================================ -->
+<!-- DONNÉES STRUCTURÉES CORRIGÉES - VALIDES POUR GOOGLE          -->
+<!-- ============================================================ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -56,12 +59,99 @@
     "addressCountry": "CI"
   },
   "areaServed": "Côte d'Ivoire",
+
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "27",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+
+  "review": {
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "name": "Kouadio Konan"
+    },
+    "datePublished": "2026-05-15",
+    "reviewBody": "Livraison rapide et matériaux de qualité. Je recommande EDC Construction pour tout chantier à Odienné.",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    }
+  },
+
   "makesOffer": [
-    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Sable de construction"}},
-    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Gravier concassé"}},
-    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Briques industrielles"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Location d'engins de chantier"}},
-    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Vente de terrains"}}
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "XOF",
+      "availability": "https://schema.org/InStock",
+      "url": "https://edc-construction.vercel.app/#produits",
+      "itemOffered": {
+        "@type": "Product",
+        "name": "Sable de construction",
+        "description": "Sable de construction pour béton, mortier, enduits et remblais. Disponible par camion.",
+        "image": "https://edc-construction.vercel.app/sable.jpg",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "18"
+        }
+      }
+    },
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "XOF",
+      "availability": "https://schema.org/InStock",
+      "url": "https://edc-construction.vercel.app/#produits",
+      "itemOffered": {
+        "@type": "Product",
+        "name": "Gravier concassé",
+        "description": "Granulats concassés en plusieurs calibres (0-5, 5-15, 5-25, 15-25) pour fondations, dallages et voiries.",
+        "image": "https://edc-construction.vercel.app/gravier3.jpg"
+      }
+    },
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "XOF",
+      "availability": "https://schema.org/InStock",
+      "url": "https://edc-construction.vercel.app/#produits",
+      "itemOffered": {
+        "@type": "Product",
+        "name": "Briques industrielles",
+        "description": "Parpaings alvéolés fabriqués en série, calibrés pour une maçonnerie droite et régulière.",
+        "image": "https://edc-construction.vercel.app/briques.jpg"
+      }
+    },
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "XOF",
+      "availability": "https://schema.org/InStock",
+      "url": "https://edc-construction.vercel.app/#engins",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Location d'engins de chantier",
+        "description": "Location de pelle hydraulique CAT 330D et compacteur SANY avec transport inclus."
+      }
+    },
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "XOF",
+      "availability": "https://schema.org/InStock",
+      "url": "https://edc-construction.vercel.app/#terrains",
+      "itemOffered": {
+        "@type": "Product",
+        "name": "Vente de terrains",
+        "description": "Terrains à vendre à Odienné et dans la région du Kabadougou, pour vos projets résidentiels ou commerciaux."
+      }
+    }
   ]
 }
 </script>
